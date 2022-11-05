@@ -1,0 +1,20 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 30%;
+  margin: 1rem;
+}
+
+.img_wrap {
+}
+
+.card_img {
+  width: 100%;
+}
+
+.card_profile {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}

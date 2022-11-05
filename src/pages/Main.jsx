@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Cards from "../components/Crads/Cards";
+import { initialState } from "../state/cards";
 
 export default function Main() {
-  return <div>Main</div>;
+  const [cards, setCards] = useState(initialState.cards);
+  return (
+    <>
+      <Cards cards={cards} />
+    </>
+  );
 }
