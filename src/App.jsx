@@ -3,7 +3,7 @@ import "./App.css";
 import Main from "./pages/Main";
 import NotFound from "./pages/NotFound";
 import Recent from "./pages/Recent";
-import Root from "./pages/Root";
+import Root from "./pages/Root/Root";
 import Search from "./pages/Search";
 import Write from "./pages/Write";
 
@@ -26,11 +26,11 @@ function App() {
           path: "/recent",
           element: <Recent />,
         },
-        {
-          path: "/write",
-          element: <Write />,
-        },
       ],
+    },
+    {
+      path: "/write",
+      element: <Write />,
     },
   ]);
   return <RouterProvider router={router} />;
